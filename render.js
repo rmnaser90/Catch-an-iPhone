@@ -11,29 +11,24 @@ cls.click(function () {
     inputContainer.addClass('hide')
 })
 
-strt.click(function () {
-    if (!(start.getGameStatus().start)) {
 
-        inputContainer.removeClass('hide')
-    }
-})
 
 const render = function () {
     let gameStats = start.getGameStatus()
     if (gameStats.start) {
-        timer.text(gameStats.timer + " seconds Left")
+        timer.text(gameStats.timer)
         iphoneContainer.css('position', 'relative')
         iphoneContainer.empty()
         strt.text('Catch the iPhones')
         inputContainer.addClass('hide')
-        username.text("Name: " + gameStats.name)
+        username.text(gameStats.name)
         score.text("Score: " + gameStats.score)
         iPhoneLeft.text(gameStats.remainingIphones + " Left")
         level.text("Level: " + gameStats.level)
         let newIphones = gameStats.iphones
         for (const iphone of newIphones) {
             let newIphone = `
-    <i id="${iphone.id}" class="fas fa-mobile-alt iphone"style="font-size: ${iphone.size}; color: ${iphone.color}; left:${iphone.posX}%; top:${iphone.posY}%;">
+    <i id="${iphone.id}" class="fas fa-mobile iphone"style="font-size: ${iphone.size}; color: ${iphone.color}; left:${iphone.posX}%; top:${iphone.posY}%;">
      
      </i>
     `
@@ -45,9 +40,13 @@ const render = function () {
     }else{
         timer.text('Best Game ever')
         iphoneContainer.empty()
+        let clickToStart = `<p>Click Start to catch iPhones!!</p>
+        <i class="fas fa-mobile-alt" style="align-self: start; font-size: 100px;"></i> 
+    `
+        iphoneContainer.append($(clickToStart))
         iphoneContainer.css('position', 'unset')
-        strt.text('Start')
-        
+        strt.text('Play again')
+
 
 
     }

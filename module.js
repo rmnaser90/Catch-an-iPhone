@@ -21,8 +21,8 @@ const catchA = function () {
         let ranNum = function () {
             let size = Math.floor(Math.random() * 100)
 
-            if (size<10) {
-               size = 10 
+            if (size<30) {
+               size = 30 
             } 
             return size
         }

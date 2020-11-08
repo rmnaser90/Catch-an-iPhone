@@ -8,24 +8,26 @@
 grid-template-rows:1fr 10fr 2fr;
 
 }
+
 #header{
-    background-color: #2ecc71;
+    background-color:  #27ae60 ;
   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    font-size: 200%;
+    font-size: 5vw;
 
 }
 
 #iphoneContainer{
+    text-align: center;
     font-size: 400%;
    display: grid;
    align-items: center;
    justify-items: center;
 position: unset;
-background-color: #27ae60;
+background-color:#2ecc71;
 
 }
 #footer{
@@ -69,7 +71,10 @@ grid-template-areas: "i s l";
 
 
 body{
+   
+    background-color: #27ae60;
     margin: 0;
+    text-align: center;
 }
 .inputContainer{
 width: 100vw;
@@ -130,3 +135,9 @@ border-radius: 10px;
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+    #mainContainer{
+
+        height: 80vh;
+    }
+  }

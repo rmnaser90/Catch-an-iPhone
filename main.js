@@ -1,19 +1,19 @@
 const play = $('#btnStart')
 const input = $('#input')
 const iphone = $(".iphone")
-play.click(function () {
+
+const initGame=function () {
+    
     if (!(start.getGameStatus().start)) {
        
         start.addIphone(1)
         start.startGame()
-        start.inputName(input.val())
-        input.val('')
+        
         let myTime = setInterval(() => {
             start.decTimer()
             if (start.getGameStatus().timer<0) {
                 start.gameOver()
                 clearInterval(myTime)
-                console.log('end');
                 render()
             }
             render()
@@ -23,7 +23,27 @@ play.click(function () {
 
 
 
+}
+play.click(function () {
+    
+    start.inputName(input.val())
+        input.val('')
+
+        initGame()
 })
+
+console.log();
+strt.click(function () {
+    if (!(start.getGameStatus().start) && start.getGameStatus().name== '') {
+
+        inputContainer.removeClass('hide')
+    }else{
+
+        initGame()
+    }
+})
+
+
 
 iphoneContainer.on('click', '.iphone', function () {
     let iphoneID = $(this).attr('id')
