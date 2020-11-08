@@ -31,8 +31,8 @@ for (let i = 0; i < num; i++) {
     
     let newIphone = {
         id:  'i'+idCounter,
-        posX: Math.floor(Math.random()*90),
-        posY: Math.floor(Math.random()*90),
+        posX: Math.floor(Math.random()*80),
+        posY: Math.floor(Math.random()*80),
         color: randomColor(),
         size: ranNum() + 'px'
     }
@@ -59,8 +59,10 @@ for (let i = 0; i < num; i++) {
    
 
     const advanceLevel = function () {
+        score+=(timer*10)
+    
         level++
-        timer =level+2
+        timer =level
         addIphone(level)
     }
     const decTimer = function () {

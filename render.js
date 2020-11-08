@@ -19,7 +19,7 @@ const render = function () {
         timer.text(gameStats.timer)
         iphoneContainer.css('position', 'relative')
         iphoneContainer.empty()
-        strt.text('Catch the iPhones')
+        strt.text('Catch the \n iPhones')
         inputContainer.addClass('hide')
         username.text(gameStats.name)
         score.text("Score: " + gameStats.score)
@@ -40,7 +40,7 @@ const render = function () {
     }else{
         timer.text('Best Game ever')
         iphoneContainer.empty()
-        let clickToStart = `<p>Click Start to catch iPhones!!</p>
+        let clickToStart = `<p>Created By: <br> Rami Naser Aldin</p>
         <i class="fas fa-mobile-alt" style="align-self: start; font-size: 100px;"></i> 
     `
         iphoneContainer.append($(clickToStart))

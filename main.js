@@ -48,7 +48,6 @@ strt.click(function () {
 iphoneContainer.on('click', '.iphone', function () {
     let iphoneID = $(this).attr('id')
     start.removeIphone(iphoneID)
-    console.log(iphoneID);
     render()
     if (start.getGameStatus().remainingIphones == 0) {
         start.advanceLevel()
