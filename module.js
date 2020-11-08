@@ -62,7 +62,23 @@ for (let i = 0; i < num; i++) {
         score+=(timer*10)
     
         level++
-        timer =level
+        if(level>10){
+            timer = level-2
+        }else{
+            timer =level
+        }
+        if (level>20) {
+            timer =level -7
+            
+        }
+        if (level>30) {
+            timer = level -12
+        }
+        if (level>40) {
+            timer = level/2
+            
+        }
+        
         addIphone(level)
     }
     const decTimer = function () {
