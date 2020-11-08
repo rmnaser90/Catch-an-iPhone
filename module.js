@@ -68,14 +68,14 @@ for (let i = 0; i < num; i++) {
             timer =level
         }
         if (level>20) {
-            timer =level -7
+            timer =level -8
             
         }
         if (level>30) {
-            timer = level -12
+            timer =Math.floor( level/2)
         }
         if (level>40) {
-            timer = level/2
+            timer = Math.floor( level/3)
             
         }
         
