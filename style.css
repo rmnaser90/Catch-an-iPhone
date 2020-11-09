@@ -1,7 +1,7 @@
 #mainContainer{
 
     background-color: white;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
     display: grid;
@@ -22,7 +22,7 @@ grid-template-rows:1fr 10fr 2fr;
 
 #iphoneContainer{
     text-align: center;
-    font-size: 400%;
+    font-size: 9vw;
    display: grid;
    align-items: center;
    justify-items: center;
@@ -80,7 +80,7 @@ body{
 }
 .inputContainer{
 width: 100vw;
-height: 100vh;
+height: 100%;
 margin: auto;
 display: grid;
 align-items: center;
@@ -146,16 +146,21 @@ font-family: 'Goldman', cursive;
 @media only screen and (max-width: 770px) {
     #mainContainer{
 
-        height: 85vh;
+        height: 100%;
     }
     .inputContainer{
-        height: 88vh; 
+        height: 100%; 
     }
     #input{
   
     font-size: 6vw;
    
     
+    }
+    #iphoneContainer{
+
+        font-size: 8vw;
+      
     }
     .buttons{
         font-size: 6vw;

@@ -1,3 +1,4 @@
+
 const cls = $('#close')
 const inputContainer = $('#inputContainer')
 const strt = $('#start')
@@ -38,7 +39,7 @@ const render = function () {
 
         }
     }else{
-        timer.text('Best Game ever')
+        timer.html('Game <br> Over')
         iphoneContainer.empty()
         let clickToStart = `<p>Created By: <br> Rami Naser Aldin</p>
         <i class="fas fa-mobile-alt" style="align-self: start; font-size: 100px;"></i> 

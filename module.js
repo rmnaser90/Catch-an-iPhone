@@ -75,10 +75,14 @@ for (let i = 0; i < num; i++) {
             timer =Math.floor( level/2)
         }
         if (level>40) {
+            timer = Math.floor( level/2.5)
+            
+        }
+        if (level>50) {
             timer = Math.floor( level/3)
             
         }
-        
+
         addIphone(level)
     }
     const decTimer = function () {
