@@ -38,7 +38,7 @@ const render = function () {
 
 
         }
-    }else{
+    } else {
         timer.html('Game <br> Over')
         iphoneContainer.empty()
         let clickToStart = `<p>Created By: <br> Rami Naser Aldin</p>

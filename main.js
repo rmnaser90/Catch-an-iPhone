@@ -1,6 +1,9 @@
 const play = $('#btnStart')
 const input = $('#input')
 const iphone = $(".iphone")
+// gets the name from local Storage if exist
+
+    start.inputName(localStorage.getItem('name')|| '')
 
 const initGame=function () {
     
@@ -32,7 +35,7 @@ play.click(function () {
         initGame()
 })
 
-console.log();
+
 strt.click(function () {
     if (!(start.getGameStatus().start) && start.getGameStatus().name== '') {
 

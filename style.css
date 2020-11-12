@@ -10,7 +10,7 @@ grid-template-rows:1fr 10fr 2fr;
 }
 
 #header{
-    background-color:  #27ae60 ;
+    background-color:  #00d8d6 ;
   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,17 +22,17 @@ grid-template-rows:1fr 10fr 2fr;
 
 #iphoneContainer{
     text-align: center;
-    font-size: 9vw;
+    font-size: 6vw;
    display: grid;
    align-items: center;
    justify-items: center;
 position: unset;
-background-color:rgba(46, 204, 113,0.3)
+background-color:rgba(52, 231, 228, 0.4)
 ;
 
 }
 #footer{
-background-color: #27ae60;
+background-color:  #00d8d6;
 
 display: grid;
 grid-template-areas: "i s l";
@@ -41,14 +41,14 @@ grid-template-areas: "i s l";
 .buttons{
     font-size: 200%;
     text-align: center;
-    
+    background-color:  #00d8d6;
     display: grid;
     align-items: center;
 }
 
 #iphonesLeft{
     grid-area: i;
-    background-color: #16a085;
+    
     
 }
 #start{
@@ -65,7 +65,7 @@ grid-template-areas: "i s l";
 
 #level{
     grid-area: l;
-    background-color: #16a085;
+    
    
 }
 
