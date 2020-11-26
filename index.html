@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Catch-an-iPhone</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+
+</head>
+
+<body scroll='no'>
+    <div id="mainContainer">
+
+        <div id="inputContainer" class="inputContainer hide">
+            <div id="close"><i class="fas fa-times"></i></div>
+            <input type="text" id="input" placeholder="Enter your Name">
+            <button id="btnStart" class="buttons">Click to start</button>
+        </div>
+
+        <div id="header">
+            <div class="name"></div>
+            <div class="timer">Best Game Ever!!</div>
+            <div class="score"> </div>
+        </div>
+
+        <div id="iphoneContainer" class="iphoneContainer">
+            <p>Created By: <br> Rami Naser Aldin</p>
+            <i class="fas fa-mobile-alt" style="align-self: start; font-size: 100px;"></i>
+        </div>
+
+        <div id="footer" class="footer">
+            <div id="iphonesLeft" class="buttons"></div>
+            <div id="start" class="buttons">Start</div>
+            <div id="level" class="buttons"></div>
+        </div>
+    </div>
+    <script>
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight;
+        $('body').css('height', vh)
+      
+
+        // We listen to the resize event
+        window.addEventListener('resize', () => {
+            let vhh = window.innerHeight;
+            $('body').css('height', vhh)
+            
+        });
+    </script>
+    <script src="module.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
